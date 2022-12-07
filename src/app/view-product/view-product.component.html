@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of product">
+                    <div class="card" style="width: 18rem;">
+                        <img height="300px" src="https://img.freepik.com/free-vector/shopping-cart-realistic_1284-6011.jpg?w=2000" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">{{i.productName}}</h5>
+                          <p class="card-text">Product Code: {{i.productCode}}</p>
+                          <p class="card-text">Manufacturing date: {{i.manufDate}}</p>
+                          <p class="card-text">Expiry Date: {{i.expDate}}</p>
+                          <p class="card-text">Brand: {{i.brand}}</p>
+                          <p class="card-text">Price: {{i.price}}</p>
+                          <p class="card-text">Seller Name: {{i.sellerName}}</p>
+                          <p class="card-text">Distributor Name: {{i.distribName}}</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
